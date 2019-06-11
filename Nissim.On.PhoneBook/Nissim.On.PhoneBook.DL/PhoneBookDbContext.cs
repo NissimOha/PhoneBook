@@ -9,13 +9,18 @@ namespace Nissim.On.PhoneBook.DL
     {
         public PhoneBookDbContext() : base("name=PhoneBookDbContext")
         {
-
+            this.Configuration.LazyLoadingEnabled = false;
         }
-
+        public virtual DbSet<Person> Person { get; set; }
+        public virtual DbSet<Record> Record { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Person>()
+                .Property(p => p.PersonId)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+
+            modelBuilder.Entity<Record>()
                 .Property(p => p.Id)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
         }
