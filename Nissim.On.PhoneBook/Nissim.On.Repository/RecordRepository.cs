@@ -24,7 +24,7 @@ namespace Nissim.On.Repository
         #endregion
 
         #region GetAllRecords
-        public async Task<List<Record>> GetAllRecords(string userName)
+        public async Task<List<Record>> GetAllRecordsAsync(string userName)
         {
             return await PhoneBookDbContext.Record
                     .Where(p => p.UserName == userName)

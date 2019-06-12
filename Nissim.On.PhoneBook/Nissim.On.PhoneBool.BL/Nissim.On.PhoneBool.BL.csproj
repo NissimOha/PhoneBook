@@ -41,7 +41,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PhoneBookHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nissim.On.PhoneBook.DL\Nissim.On.PhoneBook.DL.csproj">
+      <Project>{27617A06-8021-43B0-BEAA-C551C34A56AE}</Project>
+      <Name>Nissim.On.PhoneBook.DL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nissim.On.Repository\Nissim.On.Repository.csproj">
+      <Project>{4306CFF4-AF8D-465B-A01C-29E91B7763F6}</Project>
+      <Name>Nissim.On.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Nissim.On.PhoneBook.DL\App.config">
+      <Link>App.config</Link>
+    </None>
+    <None Include="..\Nissim.On.PhoneBook.DL\packages.config">
+      <Link>packages.config</Link>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

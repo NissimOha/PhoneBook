@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nissim.On.PhoneBook"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="400" 
+        Title="Phone Book" Height="600" Width="400" 
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         

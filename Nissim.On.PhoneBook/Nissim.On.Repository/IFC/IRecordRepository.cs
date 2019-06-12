@@ -6,6 +6,6 @@ namespace Nissim.On.Repository.IFC
 {
     public interface IRecordRepository : IRepository<Record>
     {
-        Task<List<Record>> GetAllRecords(string userName);
+        Task<List<Record>> GetAllRecordsAsync(string userName);
     }
 }
