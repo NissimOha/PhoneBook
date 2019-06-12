@@ -16,10 +16,6 @@ namespace Nissim.On.PhoneBook.DL
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Person>()
-                .Property(p => p.PersonId)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-
             modelBuilder.Entity<Record>()
                 .Property(r => r.Id)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);

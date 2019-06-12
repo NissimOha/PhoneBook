@@ -8,10 +8,6 @@ namespace Nissim.On.PhoneBook.DL
     public class Person
     {
         [Key]
-        [Index(IsUnique = true)]
-        [Column("person_id")]
-        public int PersonId { get; set; }
-
         [StringLength(30)]
         [Column("user_name")]
         public string UserName { get; set; }

@@ -38,8 +38,7 @@ namespace Nissim.On.PhoneBook.DL.Migrations
                     Address = "Harish",
                     PhoneNumber = "0545601901",
                     IsActive = true,
-                    Image = string.Empty,
-                    PersonId = 1
+                    Image = string.Empty
                 },
                 new Record()
                 {
@@ -48,8 +47,7 @@ namespace Nissim.On.PhoneBook.DL.Migrations
                     Address = "Bat-Hefer",
                     PhoneNumber = "0528447284",
                     IsActive = true,
-                    Image = string.Empty,
-                    PersonId = 1
+                    Image = string.Empty
                 },
                 new Record()
                 {
@@ -58,8 +56,7 @@ namespace Nissim.On.PhoneBook.DL.Migrations
                     Address = "Natania",
                     PhoneNumber = "0523948721",
                     IsActive = true,
-                    Image = string.Empty,
-                    PersonId = 1
+                    Image = string.Empty
                 },
                 new Record()
                 {
@@ -68,8 +65,7 @@ namespace Nissim.On.PhoneBook.DL.Migrations
                     Address = "Natania",
                     PhoneNumber = "0523948721",
                     IsActive = false,
-                    Image = string.Empty,
-                    PersonId = 1
+                    Image = string.Empty
                 }
             };
 

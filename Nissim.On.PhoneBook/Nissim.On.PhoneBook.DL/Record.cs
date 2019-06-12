@@ -10,8 +10,8 @@ namespace Nissim.On.PhoneBook.DL
         [Column("id")]
         public int Id { get; set; }
 
-        [Column("person_id")]
-        public int PersonId { get; set; }
+        [Column("user_name")]
+        public string UserName { get; set; }
 
         [StringLength(30)]
         [Column("first_name")]
@@ -36,7 +36,7 @@ namespace Nissim.On.PhoneBook.DL
         [Column("is_active")]
         public bool IsActive { get; set; }
 
-        [ForeignKey("PersonId")]
+        [ForeignKey("UserName")]
         public Person Person { get; set; }
     }
 }

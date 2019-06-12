@@ -13,7 +13,7 @@ namespace Nissim.On.PhoneBook.DL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201906121407435_PhoneBook_V1"; }
+            get { return "201906121502105_PhoneBook_V1"; }
         }
         
         string IMigrationMetadata.Source

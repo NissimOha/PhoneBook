@@ -11,19 +11,17 @@ namespace Nissim.On.PhoneBook.DL.Migrations
                 "dbo.Person",
                 c => new
                     {
-                        person_id = c.Int(nullable: false, identity: true),
-                        user_name = c.String(maxLength: 30),
+                        user_name = c.String(nullable: false, maxLength: 30),
                         password = c.String(maxLength: 15),
                     })
-                .PrimaryKey(t => t.person_id)
-                .Index(t => t.person_id, unique: true);
+                .PrimaryKey(t => t.user_name);
             
             CreateTable(
                 "dbo.Record",
                 c => new
                     {
                         id = c.Int(nullable: false, identity: true),
-                        person_id = c.Int(nullable: false),
+                        user_name = c.String(maxLength: 30),
                         first_name = c.String(maxLength: 30),
                         last_name = c.String(maxLength: 30),
                         phone_number = c.String(maxLength: 20),
@@ -32,16 +30,15 @@ namespace Nissim.On.PhoneBook.DL.Migrations
                         is_active = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.Person", t => t.person_id, cascadeDelete: true)
-                .Index(t => t.person_id);
+                .ForeignKey("dbo.Person", t => t.user_name)
+                .Index(t => t.user_name);
             
         }
         
         public override void Down()
         {
-            DropForeignKey("dbo.Record", "person_id", "dbo.Person");
-            DropIndex("dbo.Record", new[] { "person_id" });
-            DropIndex("dbo.Person", new[] { "person_id" });
+            DropForeignKey("dbo.Record", "user_name", "dbo.Person");
+            DropIndex("dbo.Record", new[] { "user_name" });
             DropTable("dbo.Record");
             DropTable("dbo.Person");
         }
