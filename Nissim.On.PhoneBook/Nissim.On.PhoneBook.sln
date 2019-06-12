@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nissim.On.PhoneBook", "Niss
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nissim.On.PhoneBook.DL", "Nissim.On.PhoneBook.DL\Nissim.On.PhoneBook.DL.csproj", "{27617A06-8021-43B0-BEAA-C551C34A56AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nissim.On.Repository", "Nissim.On.Repository\Nissim.On.Repository.csproj", "{4306CFF4-AF8D-465B-A01C-29E91B7763F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nissim.On.PhoneBool.BL", "Nissim.On.PhoneBool.BL\Nissim.On.PhoneBool.BL.csproj", "{5A6FD5D4-4CA9-4E20-986B-932107181D65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{27617A06-8021-43B0-BEAA-C551C34A56AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27617A06-8021-43B0-BEAA-C551C34A56AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27617A06-8021-43B0-BEAA-C551C34A56AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4306CFF4-AF8D-465B-A01C-29E91B7763F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4306CFF4-AF8D-465B-A01C-29E91B7763F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4306CFF4-AF8D-465B-A01C-29E91B7763F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4306CFF4-AF8D-465B-A01C-29E91B7763F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A6FD5D4-4CA9-4E20-986B-932107181D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A6FD5D4-4CA9-4E20-986B-932107181D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A6FD5D4-4CA9-4E20-986B-932107181D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A6FD5D4-4CA9-4E20-986B-932107181D65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
