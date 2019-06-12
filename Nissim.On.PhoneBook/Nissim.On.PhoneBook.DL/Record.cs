@@ -37,6 +37,6 @@ namespace Nissim.On.PhoneBook.DL
         public bool IsActive { get; set; }
 
         [ForeignKey("PersonId")]
-        public virtual Person Person { get; set; }
+        public Person Person { get; set; }
     }
 }

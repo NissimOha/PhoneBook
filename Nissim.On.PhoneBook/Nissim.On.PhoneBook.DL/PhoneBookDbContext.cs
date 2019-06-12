@@ -21,7 +21,7 @@ namespace Nissim.On.PhoneBook.DL
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
             modelBuilder.Entity<Record>()
-                .Property(p => p.Id)
+                .Property(r => r.Id)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
         }
     }

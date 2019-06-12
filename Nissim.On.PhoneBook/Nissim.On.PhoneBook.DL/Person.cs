@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Nissim.On.PhoneBook.DL
@@ -18,5 +19,7 @@ namespace Nissim.On.PhoneBook.DL
         [StringLength(15)]
         [Column("password")]
         public string Password { get; set; }
+
+        public virtual ICollection<Record> Records { get; set; }
     }
 }
